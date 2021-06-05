@@ -1,0 +1,89 @@
+.home-container {
+    display:grid;
+    grid-template-rows: 30vh auto;
+}
+
+.media-image-container {
+    display: grid;
+    grid-template-columns: 10% 85%;
+}
+.media-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 100%;
+    margin-left: 8%;
+}
+.fa-linkedin-in, .fa-facebook-f, .fa-github-alt {
+    color:var(--theme-button-color);
+    font-size: 16px;
+}
+
+.image-container {
+    background: url('../../assets/images/shankar-kruthiventi.jpg');
+    background-size: 100% 100%;
+    width: 70%;
+    height: 85%;
+    margin-top: 2%;
+    margin-left: 10%;
+    border-radius: 50%;
+}
+
+.home {
+    display: grid;
+    padding:0 6vw;
+}
+// .contact-button-container {
+//     padding:0 6vw;
+// }
+.name {
+    font-size:22px;
+    font-weight: 700;
+}
+
+.name, .designation, .experience {
+    padding-bottom: 4%;
+}
+
+.designation, .experience {
+    color: gray;
+}
+
+.contact-button {
+    width: 45%;
+    color: #ffffff;
+    background-color: var(--theme-button-color);
+    padding: 20px 10px;
+    border: none;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px) { 
+    .home-container {
+        display: grid;
+        grid-template-columns: 43% 1fr;
+        grid-template-rows: auto;
+    }
+    .image-container {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    .home-container {
+        display: grid;
+        grid-template-columns: 43% 1fr;
+        grid-template-rows: auto;
+    }
+
+    .home {
+        padding: 0;
+    }
+
+    .image-container {
+        height: 100%;
+    }
+
+}
