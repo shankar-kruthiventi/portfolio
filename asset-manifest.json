@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.0dc0a88f.chunk.css",
+    "main.js": "/portfolio/static/js/main.6b358517.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.6b358517.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.bcfbe87a.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.bcfbe87a.js.map",
+    "static/js/2.6a33c30f.chunk.js": "/portfolio/static/js/2.6a33c30f.chunk.js",
+    "static/js/2.6a33c30f.chunk.js.map": "/portfolio/static/js/2.6a33c30f.chunk.js.map",
+    "static/js/3.e29daf29.chunk.js": "/portfolio/static/js/3.e29daf29.chunk.js",
+    "static/js/3.e29daf29.chunk.js.map": "/portfolio/static/js/3.e29daf29.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "service-worker.js.map": "/portfolio/service-worker.js.map",
+    "static/css/main.0dc0a88f.chunk.css.map": "/portfolio/static/css/main.0dc0a88f.chunk.css.map",
+    "static/js/2.6a33c30f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6a33c30f.chunk.js.LICENSE.txt",
+    "static/media/about.scss": "/portfolio/static/media/shankar-kruthiventi.f0442311.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bcfbe87a.js",
+    "static/js/2.6a33c30f.chunk.js",
+    "static/css/main.0dc0a88f.chunk.css",
+    "static/js/main.6b358517.chunk.js"
+  ]
+}
