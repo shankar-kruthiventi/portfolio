@@ -5,7 +5,7 @@ import Portfolio from './components/portfolio';
 
 function App() {
 
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   const changeTheme = () => {
       return theme === 'light' ? setTheme('dark') : setTheme('light');

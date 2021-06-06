@@ -12,7 +12,7 @@ const Home = (props) => {
 
 
     return (
-        <div className="home-container">
+        <div className="home-container" id="home">
             <div className="media-image-container">
                 <div className="media-container">
                     <a href="https://www.linkedin.com/in/shankarkruthiventi/" rel="noreferrer" target="_blank">
@@ -25,24 +25,48 @@ const Home = (props) => {
                         <FontAwesomeIcon icon={faGithubAlt} />
                     </a>
                 </div>
+
+                <div className="home home-desktop">
+                    <div className="name">Hi, I'm Shankar</div>
+                    <div className="designation">Front-end Engineer</div>
+                    <div className="experience">
+                        I have 5+ years of experience in Modern Front-end Development.
+                    </div>
+                    <div className="experience">
+                        Have built aesthetic and functional applications using Angular, React and Node
+                    </div>
+
+                    <div className="contact-button-container">
+                        <button className="contact-button">
+                            Contact Me &nbsp;
+                    <FontAwesomeIcon icon={faArrowRight} />
+                        </button>
+                    </div>
+                </div>
+
+
+
+
                 <div className="image-container"></div>
             </div>
-            <div className="home">
-                <div className="name">Hi I'm Shankar</div>
+            <div className="home home-mobile">
+                <div className="name">Hi, I'm Shankar</div>
                 <div className="designation">Front-end Engineer</div>
                 <div className="experience">
                     I have 5+ years of experience in Modern Front-end Development.
                 </div>
                 <div className="experience">
-                    Have built aesthetic and fucntional applications using Angular, React and Node
+                    Have built aesthetic and functional applications using Angular, React and Node
                 </div>
-                
-                <button className="contact-button">
-                    Contact Me &nbsp;
+
+                <div className="contact-button-container">
+                    <button className="contact-button">
+                        Contact Me &nbsp;
                     <FontAwesomeIcon icon={faArrowRight} />
-                </button>
+                    </button>
+                </div>
             </div>
-            <Navbar changeTheme={props.changeTheme}/>
+            <Navbar changeTheme={props.changeTheme} />
         </div>
     )
 

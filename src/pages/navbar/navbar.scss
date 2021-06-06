@@ -8,7 +8,17 @@
     background: var(--theme-page-background);
     color: var(--theme-page-text);
     border-top: 1px solid var(--theme-page-text);
-    z-index: 999999;
+    border-radius: 40px;
+}
+
+#hiddenOverlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    display: none;
 }
 
 .float_left {
@@ -25,15 +35,18 @@
     align-items: center;
     margin-right: 5%;
 }
-
 .menu {
-    display: grid;
-    position: absolute;
+    display: none;
+    position: fixed;
     bottom: 0;
     left:0;
+    width: 100vw;
     grid-template-rows: 100px 100px;
     grid-template-columns: repeat(3, 33.33%);
     z-index: 999;
+    background: var(--theme-page-background);
+    border-top: 1px solid var(--theme-page-text);
+    border-radius: 40px;
 }
 
 .menu div {
@@ -41,14 +54,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width:120px;
+    min-height: 100px;
+    text-decoration: none;
+    color: var(--theme-page-text);
 }
 
 .navbar {
-    z-index: 99;
+    z-index: -1;
+    position: relative;
 }
-.fa-home {
+.fa-home, .fa-user-alt, .fa-file, .fa-briefcase, .fa-images, .fa-address-card {
     display: block;
     font-size: 16px;
+    color: var(--theme-button-color);
 }
 
 @media only screen and (min-width: 700px) {
