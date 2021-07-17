@@ -9,9 +9,14 @@ const Portfolio = (props) => {
 
     return (
         <div className="portfolio">
-            <Home changeTheme={props.changeTheme}/>
-            <About />
-            <div style={{height: '600px'}}>sdfsdf</div>
+            <div id="potrait">
+                <Home changeTheme={props.changeTheme} />
+                <About />
+                <div style={{ height: '600px' }}>sdfsdf</div>
+            </div>
+            <div id="landscape">
+                <div className="message">Please rotate your device.</div>
+            </div>
         </div>
     )
 

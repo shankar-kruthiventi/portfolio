@@ -24,7 +24,7 @@
 }
 
 .image-container {
-  background: url("../../assets/images/shankar-kruthiventi.jpg");
+  // background: url("../../assets/images/shankar-kruthiventi.jpg");
   background-size: 100% 100%;
   width: 70%;
   height: 85%;
@@ -51,7 +51,8 @@
 
 .designation,
 .experience {
-  color: gray;
+  // #c1b0b0
+  color: gray; 
 }
 
 .contact-button-container {
@@ -77,6 +78,12 @@
 }
 .home-mobile {
   display: grid;
+  margin-top: 40px;
+}
+
+.home__blob-img {
+  width: 200px;
+  height: 200px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -91,12 +98,18 @@
     grid-template-columns: 1% 55% 44%;
   }
 
+  .media-container {
+    position: relative;
+    bottom: 10%;
+  }
+
   .image-container {
     width: 85%;
   }
 
   .home-desktop {
     display: grid;
+    margin-top: 20px;
   }
   .home-mobile {
     display: none;

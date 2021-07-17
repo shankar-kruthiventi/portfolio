@@ -3,6 +3,29 @@
     height:100%;
   }
 
+  #landscape {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    font-size: 24px;
+  }
+
+  .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media only screen and (orientation:landscape) and (max-width: 1024px) {
+    #potrait{ display:none; }
+    #landscape{ display:block; }
+  }
+  @media only screen and (orientation:portrait) and (max-width: 1024px) {
+    #potrait{ display:block; }
+    #landscape{ display:none; }
+  }
+
   @media only screen and (min-width:768px) and (max-width: 1024px) { 
     .portfolio {
         width: 90vw;
@@ -14,8 +37,7 @@
   @media only screen and (min-width:1025px) { 
     .portfolio {
         width: 88vw;
-        padding: 10vh auto 0;
+        padding: 0;
         margin: 0 auto;
     }
   }
-

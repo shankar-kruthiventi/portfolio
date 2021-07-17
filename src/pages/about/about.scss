@@ -1,79 +1,101 @@
-.about-container {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 10vh;
-    width:100%;
+.about-main-container {
+    width: 100%;
     height: 100vh;
+    text-align: center;
+    margin-top: 10vh;
+
 }
-.about-container .about-title {
-    margin-bottom: 8vh;
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .about-title {
-    font-weight:600;
-}
-
-.about-container .about-image {
-    margin-bottom: 4vh;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4vh;
 }
 
 .about-image {
-    background: url('../../assets/images/shankar-kruthiventi.jpg');
-    background-size: 100% 100%;
-    width: 70%;
-    height: 30%;
+  background: url("../../assets/images/shankar-kruthiventi.jpg");
+  background-size: 100% 100%;
+  width: 80%;
+  height: 60%;
+  margin: 0 auto 4vh auto;
+}
+
+.about-desc-container {
+  width: 100%;
+  height: 100%;
 }
 
 .about-desc {
-    padding:0 6vw;
-    text-align: center;
-    color: gray;
+  padding: 0 6vw;
+  text-align: center;
+  color: gray;
 }
 
-.about-container .about-desc {
-    margin-bottom: 2vh;
+.about-desc {
+  margin-bottom: 2vh;
 }
 
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding:0 6vw;
-    margin-bottom: 8vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0 6vw;
+  margin-bottom: 8vh;
 }
 
 .about-col {
-    text-align: center;
-    font-weight: 600;
-    word-break: break-word;
+  text-align: center;
+  font-weight: 600;
+  word-break: break-word;
 }
 
 .about-col :nth-child(1) {
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--theme-button-color);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--theme-button-color);
 }
 
 .about-col :nth-child(2) {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .about-resume-button {
-    margin-bottom: 4vh;
+  margin-bottom: 4vh;
+  text-align: center;
+  height: 110px;
 }
 
 .resume-button {
-    color: #ffffff;
-    background-color: var(--theme-button-color);
-    width: 60vw;
-    height: 10vh;
-    border: none;
-    font-size: 18px;
-    border-radius: 10px;
-
+  color: #ffffff;
+  background-color: var(--theme-button-color);
+  width: 60vw;
+  height: 10vh;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
 }
 
 .resume-button:active {
-    zoom: 0.90;
+  zoom: 0.9;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .about-main-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
 }
