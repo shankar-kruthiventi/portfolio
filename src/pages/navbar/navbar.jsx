@@ -18,19 +18,11 @@ const Navbar = (props) => {
         }
     }
 
-    const toggleOverlay = () => {
-        let overlay = document.getElementById('hiddenOverlay');
-        let element = document.getElementById('menu');
-        element.style.display = 'none';
-        overlay.style.display = 'none';
-    }
-
     const scrollIntoView = (id) => {
         document.getElementById(id).scrollIntoView({block: "start"});
     }
     
     return [
-        <div id="hiddenOverlay" onClick={toggleOverlay}></div>,
         <div className="navbar-container">
             <div id="menu" className="menu" onClick={toggleMenu}>
                 <div className="menu-item" onClick={() => scrollIntoView('home')}>

@@ -47,6 +47,7 @@
 .designation,
 .experience {
   padding-bottom: 4%;
+  font-weight: 600;
 }
 
 .designation,
@@ -56,7 +57,7 @@
 }
 
 .contact-button-container {
-  height: 150px;
+  height: 90px;
 }
 .contact-button {
   width: 45%;
@@ -129,8 +130,10 @@
   }
 
   .media-image-container {
-    grid-template-columns: 10% 40% 40%;
-    gap: 5%;
+    // grid-template-columns: 10% 40% 40%;
+    // gap: 5%;
+    grid-template-columns: 2% 45% 45%;
+    gap: 7%;
   }
 
   .home {

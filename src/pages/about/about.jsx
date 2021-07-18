@@ -12,7 +12,10 @@ const About = () => {
             <div className="about-container" id="about">
                 <div className="about-image"></div>
                 <div className="about-desc-container">
-                    <div className="about-desc">Web developer with Extensive Knowledge and Years of Experience in Web Technologies</div>
+                    <div className="about-desc">
+                        Web developer with Extensive Knowledge in Modern Web Technologies. Have worked upon various JavaScript 
+                        frameworks and libraries.<br /> My Skill Set includes HTML 5, CSS 3, JavaScript, TypeScipt, Angular, React And Node.
+                    </div>
                     <div className="about">
                         <div className="about-col">
                             <div>05+</div>

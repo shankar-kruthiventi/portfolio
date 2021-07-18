@@ -16,15 +16,16 @@
 .about-title {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 4vh;
+  margin-bottom: 2vh;
 }
 
 .about-image {
-  background: url("../../assets/images/shankar-kruthiventi.jpg");
+  // background: url("../../assets/images/shankar-kruthiventi.jpg");
+  background: url("../../assets/images/about.svg");
   background-size: 100% 100%;
   width: 80%;
   height: 60%;
-  margin: 0 auto 4vh auto;
+  margin: 0 auto 2vh auto;
 }
 
 .about-desc-container {
@@ -34,12 +35,11 @@
 
 .about-desc {
   padding: 0 6vw;
-  text-align: center;
+  text-align: left;
   color: gray;
-}
-
-.about-desc {
-  margin-bottom: 2vh;
+  font-style: oblique;
+  font-weight: 600;
+  margin-bottom: 3vh;
 }
 
 .about {
@@ -89,13 +89,37 @@
 @media only screen and (min-width: 768px) {
 
     .about-main-container {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
+    }
+    
+    .about-title {
+      margin-bottom: 10vh;
     }
 
     .about-container {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+    }
+    
+    .about-desc-container {
+      width: 100%;
+      height: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .about-desc {
+      text-align: justify;
+    }
+    .about-image {
+      width: 80%;
+      height: 55%;
+    }
+    .resume-button {
+      width: 50%;
+      height: 10vh;
     }
 }
