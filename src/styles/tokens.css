@@ -1,0 +1,205 @@
+/* ==========================================================================
+   Design tokens — extracted from docs/design/ai-constellation-story-rail-*.png
+   (pixel-sampled from the desktop light/dark designs; see tokens.md).
+
+   Rules
+   - Components use semantic tokens (--color-*, --grad-*), never raw hex.
+   - Theme is selected by <html data-theme="light|dark"> (set in index.html
+     before first paint, then managed by src/hooks/useTheme.ts).
+   - Values marked "AA" were nudged from the sampled design value so text
+     meets WCAG AA (4.5:1) in that theme; the sampled value is in the comment.
+   ========================================================================== */
+
+/* ---- Theme-independent tokens ------------------------------------------ */
+:root {
+  /* Typography. The design renders in a Segoe-UI-like humanist sans; no
+     webfont is bundled, so the stack falls back to the platform UI font. */
+  --font-sans:
+    'Inter Variable', 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system, Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+
+  --text-display: clamp(2.75rem, 1.5rem + 4.6vw, 4.75rem); /* hero h1: 76px @1440 */
+  --text-h2: clamp(1.75rem, 1.2rem + 1.4vw, 2.25rem); /* section titles */
+  --text-h3: 1.0625rem; /* card titles */
+  --text-lead: clamp(1rem, 0.9rem + 0.4vw, 1.125rem); /* hero subtitle */
+  --text-body: 0.9375rem;
+  --text-small: 0.8125rem;
+  --text-eyebrow: 0.6875rem; /* uppercase kickers */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --weight-black: 800;
+
+  --leading-display: 1;
+  --leading-tight: 1.15;
+  --leading-body: 1.6;
+  --tracking-display: -0.04em;
+  --tracking-heading: -0.03em;
+  --tracking-eyebrow: 0.14em;
+
+  /* Spacing (4px base) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem; /* section padding on desktop */
+
+  /* Layout */
+  --container: 66rem; /* ~1056px content width in the 1440 design */
+  --gutter: clamp(1.25rem, 4vw, 2rem);
+
+  /* Radii */
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem; /* experience / capability cards */
+  --radius-lg: 1.5rem; /* story card, CTA panel */
+  --radius-pill: 999px; /* buttons, chips, badges */
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur-base: 250ms;
+  --dur-slow: 600ms;
+
+  /* Shared, theme-agnostic gradients (sampled; identical in both designs) */
+  --grad-primary-design: linear-gradient(
+    110deg,
+    #7dbeff 0%,
+    #775eff 100%
+  ); /* white text: fails AA */
+}
+
+/* ---- Light theme (opt-in via the toggle) ------------------------------- */
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  /* Page */
+  --color-bg: #f4f5ff; /* sampled #f7f7ff (top) → #eef3ff (bottom) */
+  --color-bg-top: #f7f7ff;
+  --color-bg-bottom: #eef3ff;
+  --color-wash-violet: #e4e2fc; /* glow behind hero, top centre */
+  --color-wash-mint: #e2edf7; /* glow at left, ~mid page */
+  --color-dot: rgb(90 90 160 / 0.1); /* faint dot grid */
+
+  /* Surfaces */
+  --color-surface: #fbfcfe; /* experience / capability cards */
+  --color-surface-pill: #ffffff; /* chips, ghost buttons, inactive rail badges */
+  --color-surface-tint: #ecf7fe; /* story card top-left tint */
+  --color-surface-active: #e0ecfc; /* active rail row */
+  --color-cta-from: #deddff;
+  --color-cta-to: #e5f1fd;
+
+  /* Lines */
+  --color-rule: #cfd0e9; /* section + header hairlines, orbit rings sampled #c7c8e9 */
+  --color-border: #dfe3f1; /* card borders (estimated; 1px edges are anti-aliased in the PNG) */
+  --color-ring: #c7c8e9; /* orbit rings */
+
+  /* Text */
+  --color-text: #17172f;
+  --color-text-muted: #62627f; /* AA: sampled #686889 is 4.47:1 on the active rail row */
+  --color-accent: #00746f; /* AA: sampled brand teal #007f7a is 4.48:1 on page bg */
+  --color-accent-brand: #007f7a; /* decorative use only: borders, dots, rings */
+  --color-accent-2: #9faae6; /* periwinkle end of the headline gradient */
+
+  /* Buttons */
+  --color-on-primary: #17172f;
+  --color-orb-label: #17172f; /* ink on the light orb; AA */
+  --grad-primary: linear-gradient(110deg, #7dbeff 0%, #8a74ff 100%); /* AA with ink text */
+
+  /* Gradients */
+  --grad-headline: linear-gradient(95deg, #007f7a 0%, #4a93b0 45%, #b4b0f4 100%);
+  --grad-orb-hero: radial-gradient(
+    circle at 36% 26%,
+    #e5f4ff 0%,
+    #b2ddff 22%,
+    #7bbefe 45%,
+    #5c54ec 78%,
+    #30216f 100%
+  );
+  --grad-orb-metric: radial-gradient(
+    circle at 38% 24%,
+    #e3f3ff 0%,
+    #b9e7ff 25%,
+    #78bbf5 52%,
+    #546eb2 75%,
+    #30206c 100%
+  );
+  --grad-story-card: linear-gradient(160deg, #ecf7fe 0%, #f5fbff 45%, #fefeff 100%);
+  --grad-cta: linear-gradient(115deg, var(--color-cta-from), var(--color-cta-to));
+
+  /* Elevation */
+  --shadow-card: 0 10px 30px rgb(80 70 200 / 0.08);
+  --shadow-chip: 0 6px 18px rgb(80 90 200 / 0.12);
+  --shadow-orb: 0 24px 60px rgb(100 110 240 / 0.35);
+  --focus-ring: 0 0 0 3px var(--color-bg), 0 0 0 5px var(--color-accent);
+}
+
+/* ---- Dark theme (default, also applies if data-theme is missing) ------- */
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Page */
+  --color-bg: #090727; /* sampled #090727 (top) → #0f0f39 (bottom) */
+  --color-bg-top: #090727;
+  --color-bg-bottom: #0f0f39;
+  --color-wash-violet: #1b1550;
+  --color-wash-mint: #141e40;
+  --color-dot: rgb(150 150 255 / 0.12);
+
+  /* Surfaces */
+  --color-surface: #13113b; /* sampled #12103a–#14143c */
+  --color-surface-pill: #141043; /* chips; ghost buttons sample #1c1840 */
+  --color-surface-tint: #222957; /* story card top-left */
+  --color-surface-active: #182448; /* active rail row */
+  --color-cta-from: #28235c;
+  --color-cta-to: #141b44;
+
+  /* Lines */
+  --color-rule: #373260;
+  --color-border: #2c2a5c; /* estimated, see light theme note */
+  --color-ring: #433c73;
+
+  /* Text */
+  --color-text: #f4f1ff;
+  --color-text-muted: #aca5d7;
+  --color-accent: #65eee0; /* mint */
+  --color-accent-brand: #65eee0;
+  --color-accent-2: #b4bffa;
+
+  /* Buttons */
+  --color-on-primary: #090727;
+  --color-orb-label: #090727; /* design uses pale text here (~3:1); ink passes AA */
+  --grad-primary: linear-gradient(110deg, #7dbeff 0%, #8a74ff 100%);
+
+  /* Gradients */
+  --grad-headline: linear-gradient(95deg, #67eee1 0%, #84dceb 40%, #b4bffa 100%);
+  --grad-orb-hero: radial-gradient(
+    circle at 36% 26%,
+    #ebe5ff 0%,
+    #c3b2ff 20%,
+    #9276f4 42%,
+    #503e9e 72%,
+    #241868 100%
+  );
+  --grad-orb-metric: radial-gradient(
+    circle at 38% 24%,
+    #e3f3ff 0%,
+    #b9e7ff 25%,
+    #78bbf5 52%,
+    #546eb2 75%,
+    #241868 100%
+  );
+  --grad-story-card: linear-gradient(160deg, #252a59 0%, #1c1c49 50%, #16123f 100%);
+  --grad-cta: linear-gradient(115deg, var(--color-cta-from), var(--color-cta-to));
+
+  /* Elevation */
+  --shadow-card: 0 10px 30px rgb(0 0 20 / 0.45);
+  --shadow-chip: 0 6px 18px rgb(0 0 20 / 0.4);
+  --shadow-orb: 0 24px 60px rgb(120 90 255 / 0.45);
+  --focus-ring: 0 0 0 3px var(--color-bg), 0 0 0 5px var(--color-accent);
+}

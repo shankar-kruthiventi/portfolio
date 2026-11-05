@@ -1,0 +1,143 @@
+- generic [ref=f5e2]:
+  - link "Skip to content" [ref=f5e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f5e4]:
+    - generic [ref=f5e5]:
+      - link "Sankara Rao Kruthiventi — home" [ref=f5e6] [cursor=pointer]:
+        - /url: "#top"
+        - text: SRK
+      - navigation "Primary" [ref=f5e7]:
+        - link "Impact" [ref=f5e8] [cursor=pointer]:
+          - /url: "#impact"
+        - link "Experience" [ref=f5e9] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Contact" [ref=f5e10] [cursor=pointer]:
+          - /url: "#contact"
+        - button "Switch to dark theme" [ref=f5e11] [cursor=pointer]
+  - main [ref=f5e14]:
+    - region [ref=f5e15]:
+      - generic [ref=f5e16]:
+        - paragraph [ref=f5e17]: Senior Full-Stack Engineer · Open to roles
+        - heading "Engineering across the whole constellation." [level=1] [ref=f5e18]
+        - paragraph [ref=f5e19]: Sankara Rao Kruthiventi connects interfaces, services, platforms, quality, and AI into dependable product outcomes.
+        - generic [ref=f5e20]:
+          - link "Explore résumé" [ref=f5e21] [cursor=pointer]:
+            - /url: "#experience"
+          - link "LinkedIn" [ref=f5e22] [cursor=pointer]:
+            - /url: "#"
+        - paragraph [ref=f5e23]: 10 years · Bengaluru, India.
+      - generic [ref=f5e24]:
+        - generic [ref=f5e28]:
+          - generic [ref=f5e29]: Senior
+          - generic [ref=f5e30]: Full Stack
+        - list [ref=f5e31]:
+          - listitem [ref=f5e32]: TypeScript
+          - listitem [ref=f5e33]: Node.js
+          - listitem [ref=f5e34]: Angular
+          - listitem [ref=f5e35]: AWS
+          - listitem [ref=f5e36]: AI / RAG
+    - region [ref=f5e37]:
+      - generic [ref=f5e38]:
+        - heading "Signals of impact" [level=2] [ref=f5e39]
+        - paragraph [ref=f5e40]: Story rail · Verified from experience
+      - generic [ref=f5e41]:
+        - tablist "Case studies" [ref=f5e42]:
+          - tab "90% Document automation Wipro" [selected] [ref=f5e43] [cursor=pointer]:
+            - generic [ref=f5e44]: 90%
+            - generic [ref=f5e45]:
+              - generic [ref=f5e46]: Document automation
+              - generic [ref=f5e47]: Wipro
+          - tab "80% Reusable Angular systems OpenText" [ref=f5e48] [cursor=pointer]:
+            - generic [ref=f5e49]: 80%
+            - generic [ref=f5e50]:
+              - generic [ref=f5e51]: Reusable Angular systems
+              - generic [ref=f5e52]: OpenText
+          - tab "70% SME loan workflows OakNorth" [ref=f5e53] [cursor=pointer]:
+            - generic [ref=f5e54]: 70%
+            - generic [ref=f5e55]:
+              - generic [ref=f5e56]: SME loan workflows
+              - generic [ref=f5e57]: OakNorth
+          - tab "60% Unified management OpenText" [ref=f5e58] [cursor=pointer]:
+            - generic [ref=f5e59]: 60%
+            - generic [ref=f5e60]:
+              - generic [ref=f5e61]: Unified management
+              - generic [ref=f5e62]: OpenText
+        - tabpanel "90% Document automation Wipro" [ref=f5e63]:
+          - generic [ref=f5e65]: 90%
+          - generic [ref=f5e66]:
+            - paragraph [ref=f5e67]: Wipro · HR document automation
+            - generic [ref=f5e68]:
+              - generic [ref=f5e69]:
+                - term [ref=f5e70]: 01 / Context
+                - definition [ref=f5e71]: HR document generation and compliance-sensitive templates.
+              - generic [ref=f5e72]:
+                - term [ref=f5e73]: 02 / Engineering
+                - definition [ref=f5e74]: A secure TypeScript pipeline using server-side PDF engines, validated data, and encrypted templates.
+              - generic [ref=f5e75]:
+                - term [ref=f5e76]: 03 / Outcome
+                - definition [ref=f5e77]: Reduced manual errors by 90% and accelerated delivery.
+    - region [ref=f5e78]:
+      - generic [ref=f5e79]:
+        - heading "Experience nodes" [level=2] [ref=f5e80]
+        - paragraph [ref=f5e81]: Select a node to expand
+      - list [ref=f5e82]:
+        - listitem [ref=f5e83]:
+          - button "OpenText 2022—Present" [expanded] [ref=f5e84] [cursor=pointer]:
+            - generic [ref=f5e85]: OpenText
+            - generic [ref=f5e86]: 2022—Present
+          - region "OpenText" [ref=f5e87]:
+            - paragraph [ref=f5e88]: Unified Management Console, Angular frameworks, CI/CD, OpenAPI, passkeys, and authorization.
+        - listitem [ref=f5e89]:
+          - button "OneTrust 2021—2022" [ref=f5e90] [cursor=pointer]:
+            - generic [ref=f5e91]: OneTrust
+            - generic [ref=f5e92]: 2021—2022
+          - region "OneTrust":
+            - paragraph: Incident and breach microfrontend, reusable components, and standards.
+        - listitem [ref=f5e93]:
+          - button "OakNorth 2020—2021" [ref=f5e94] [cursor=pointer]:
+            - generic [ref=f5e95]: OakNorth
+            - generic [ref=f5e96]: 2020—2021
+          - region "OakNorth":
+            - paragraph: Core banking and reusable loan-processing components.
+        - listitem [ref=f5e97]:
+          - button "Mindtree 2018—2020" [ref=f5e98] [cursor=pointer]:
+            - generic [ref=f5e99]: Mindtree
+            - generic [ref=f5e100]: 2018—2020
+          - region "Mindtree":
+            - paragraph: Products across education, insurance, banking, and supply chain.
+        - listitem [ref=f5e101]:
+          - button "Wipro 2016—2018" [ref=f5e102] [cursor=pointer]:
+            - generic [ref=f5e103]: Wipro
+            - generic [ref=f5e104]: 2016—2018
+          - region "Wipro":
+            - paragraph: Automation, tracking, templating, and performance optimization.
+    - region [ref=f5e105]:
+      - generic [ref=f5e106]:
+        - heading "Capability clusters" [level=2] [ref=f5e107]
+        - paragraph [ref=f5e108]: Product to platform
+      - list [ref=f5e109]:
+        - listitem [ref=f5e110]:
+          - heading "Frontend" [level=3] [ref=f5e111]
+          - paragraph [ref=f5e112]: Angular · React · TypeScript · HTML5 · CSS3
+        - listitem [ref=f5e113]:
+          - heading "Backend" [level=3] [ref=f5e114]
+          - paragraph [ref=f5e115]: Node.js · Nest.js · REST APIs · SQL
+        - listitem [ref=f5e116]:
+          - heading "Platform" [level=3] [ref=f5e117]
+          - paragraph [ref=f5e118]: AWS · Linux · Git · CI/CD
+        - listitem [ref=f5e119]:
+          - heading "Quality" [level=3] [ref=f5e120]
+          - paragraph [ref=f5e121]: Unit · E2E · Security · Patterns
+        - listitem [ref=f5e122]:
+          - heading "AI + Product" [level=3] [ref=f5e123]
+          - paragraph [ref=f5e124]: Gen AI · Agentic AI · RAG · LLMs · UI/UX
+    - region [ref=f5e125]:
+      - generic [ref=f5e126]:
+        - generic [ref=f5e127]:
+          - heading "Connect the next opportunity." [level=2] [ref=f5e128]
+          - paragraph [ref=f5e129]: Bengaluru · +91 79729 14312 · shankar3336@gmail.com
+        - generic [ref=f5e130]:
+          - link "Email" [ref=f5e131] [cursor=pointer]:
+            - /url: mailto:shankar3336@gmail.com
+          - link "Call" [ref=f5e132] [cursor=pointer]:
+            - /url: tel:+917972914312

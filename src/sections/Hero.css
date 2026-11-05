@@ -1,0 +1,175 @@
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: center;
+  gap: var(--space-7);
+  padding-block: var(--space-8) var(--space-9);
+}
+
+.hero .eyebrow::before {
+  content: '';
+  width: 2rem;
+  height: 1px;
+  background: var(--color-accent-brand);
+}
+
+.hero__title {
+  margin-block: var(--space-5) var(--space-5);
+  max-width: 6.9em;
+  font-size: var(--text-display);
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+}
+
+.hero__title-accent {
+  background: var(--grad-headline);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero__lead {
+  max-width: 34rem;
+  font-size: var(--text-lead);
+  color: var(--color-text-muted);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.hero__meta {
+  margin-top: var(--space-4);
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+}
+
+/* ---- Orbit ------------------------------------------------------------- */
+.orbit {
+  position: relative;
+  width: min(100%, 27.5rem);
+  aspect-ratio: 1;
+  margin-inline: auto;
+  container-type: inline-size;
+}
+
+.orbit__ring {
+  position: absolute;
+  border: 1px solid var(--color-ring);
+  border-radius: 50%;
+}
+
+.orbit__ring--outer {
+  inset: 0;
+}
+
+.orbit__ring--middle {
+  inset: 12.5%;
+}
+
+.orbit__ring--inner {
+  inset: 26%;
+}
+
+.orbit__core {
+  position: absolute;
+  inset: 35%;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  background: var(--grad-orb-hero);
+  box-shadow: var(--shadow-orb);
+  color: var(--color-orb-label);
+  font-size: clamp(0.6875rem, 0.55rem + 0.5vw, 0.875rem);
+  font-weight: var(--weight-black);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.orbit__chips {
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Each chip sits at the orbit centre, is swung out to --orbit-radius at its
+   own --start angle, and rotates a full turn. The counter-rotation keeps the
+   label upright. cqw is relative to .orbit (container-type: inline-size). */
+.chip {
+  --orbit-radius: 42cqw;
+  --start: 0deg;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(var(--start)) translateX(var(--orbit-radius))
+    rotate(calc(-1 * var(--start)));
+  animation: orbit 30s linear infinite;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-pill);
+  box-shadow: var(--shadow-chip);
+  color: var(--color-accent);
+  font-size: var(--text-small);
+  font-weight: var(--weight-black);
+  white-space: nowrap;
+}
+
+/* Start angles follow the 1440px design: evenly spaced, TypeScript at the top. */
+.chip--typescript {
+  --start: -90deg;
+}
+.chip--nodejs {
+  --start: -18deg;
+}
+.chip--ai-rag {
+  --start: 54deg;
+}
+.chip--aws {
+  --start: 126deg;
+}
+.chip--angular {
+  --start: 198deg;
+}
+
+@keyframes orbit {
+  to {
+    transform: translate(-50%, -50%) rotate(calc(var(--start) + 360deg))
+      translateX(var(--orbit-radius)) rotate(calc(-1 * (var(--start) + 360deg)));
+  }
+}
+
+/* Let people read a label by pointing at the orbit. */
+.orbit:hover .chip {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chip {
+    animation: none;
+  }
+}
+
+/* Keep the widest chip inside the page gutter on phones. */
+@media (max-width: 30rem) {
+  .chip {
+    --orbit-radius: 38cqw;
+  }
+}
+
+@media (max-width: 56rem) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-block: var(--space-7) var(--space-8);
+  }
+
+  .orbit {
+    width: min(100%, 22rem);
+  }
+}
