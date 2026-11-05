@@ -1,0 +1,189 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Sankara Rao Kruthiventi — home" [ref=e6] [cursor=pointer]:
+        - /url: "#top"
+        - text: SRK
+      - navigation "Primary" [ref=e7]:
+        - link "Impact" [ref=e8] [cursor=pointer]:
+          - /url: "#impact"
+        - link "Experience" [ref=e9] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Contact" [ref=e10] [cursor=pointer]:
+          - /url: "#contact"
+        - button "Switch to dark theme" [ref=e11] [cursor=pointer]
+  - main [ref=e14]:
+    - region [ref=e15]:
+      - generic [ref=e16]:
+        - paragraph [ref=e17]: Senior Full-Stack Engineer · Open to roles
+        - heading "Engineering across the whole constellation." [level=1] [ref=e18]
+        - paragraph [ref=e19]: Sankara Rao Kruthiventi connects interfaces, services, platforms, quality, and AI into dependable product outcomes.
+        - generic [ref=e20]:
+          - link "Explore résumé" [ref=e21] [cursor=pointer]:
+            - /url: "#experience"
+          - link "LinkedIn" [ref=e22] [cursor=pointer]:
+            - /url: "#"
+        - paragraph [ref=e23]: 10 years · Bengaluru, India.
+      - generic [ref=e24]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: Senior
+          - generic [ref=e30]: Full Stack
+        - list [ref=e31]:
+          - listitem [ref=e32]: TypeScript
+          - listitem [ref=e33]: Node.js
+          - listitem [ref=e34]: Angular
+          - listitem [ref=e35]: AWS
+          - listitem [ref=e36]: AI / RAG
+    - region [ref=e37]:
+      - generic [ref=e38]:
+        - heading "Signals of impact" [level=2] [ref=e39]
+        - paragraph [ref=e40]: Story rail · Verified from experience
+      - generic [ref=e41]:
+        - tablist "Case studies" [ref=e42]:
+          - tab "90% Document automation Wipro" [selected] [ref=e43] [cursor=pointer]:
+            - generic [ref=e44]: 90%
+            - generic [ref=e45]:
+              - generic [ref=e46]: Document automation
+              - generic [ref=e47]: Wipro
+          - tab "80% Reusable Angular systems OpenText" [ref=e48] [cursor=pointer]:
+            - generic [ref=e49]: 80%
+            - generic [ref=e50]:
+              - generic [ref=e51]: Reusable Angular systems
+              - generic [ref=e52]: OpenText
+          - tab "70% SME loan workflows OakNorth" [ref=e53] [cursor=pointer]:
+            - generic [ref=e54]: 70%
+            - generic [ref=e55]:
+              - generic [ref=e56]: SME loan workflows
+              - generic [ref=e57]: OakNorth
+          - tab "60% Unified management OpenText" [ref=e58] [cursor=pointer]:
+            - generic [ref=e59]: 60%
+            - generic [ref=e60]:
+              - generic [ref=e61]: Unified management
+              - generic [ref=e62]: OpenText
+        - tabpanel "90% Document automation Wipro" [ref=e63]:
+          - generic [ref=e65]: 90%
+          - generic [ref=e66]:
+            - paragraph [ref=e67]: Wipro · HR document automation
+            - generic [ref=e68]:
+              - generic [ref=e69]:
+                - term [ref=e70]: 01 / Context
+                - definition [ref=e71]: HR document generation and compliance-sensitive templates.
+              - generic [ref=e72]:
+                - term [ref=e73]: 02 / Engineering
+                - definition [ref=e74]: A secure TypeScript pipeline using server-side PDF engines, validated data, and encrypted templates.
+              - generic [ref=e75]:
+                - term [ref=e76]: 03 / Outcome
+                - definition [ref=e77]: Reduced manual errors by 90% and accelerated delivery.
+    - region [ref=e78]:
+      - generic [ref=e79]:
+        - heading "Experience nodes" [level=2] [ref=e80]
+        - paragraph [ref=e81]: Select a node to expand
+      - list [ref=e82]:
+        - listitem [ref=e83]:
+          - button "OpenText 2022—Present" [expanded] [ref=e84] [cursor=pointer]:
+            - generic [ref=e85]: OpenText
+            - generic [ref=e86]: 2022—Present
+          - region "OpenText" [ref=e87]:
+            - paragraph [ref=e88]: Unified Management Console, Angular frameworks, CI/CD, OpenAPI, passkeys, and authorization.
+        - listitem [ref=e89]:
+          - button "OneTrust 2021—2022" [ref=e90] [cursor=pointer]:
+            - generic [ref=e91]: OneTrust
+            - generic [ref=e92]: 2021—2022
+          - region "OneTrust":
+            - paragraph: Incident and breach microfrontend, reusable components, and standards.
+        - listitem [ref=e93]:
+          - button "OakNorth 2020—2021" [ref=e94] [cursor=pointer]:
+            - generic [ref=e95]: OakNorth
+            - generic [ref=e96]: 2020—2021
+          - region "OakNorth":
+            - paragraph: Core banking and reusable loan-processing components.
+        - listitem [ref=e97]:
+          - button "Mindtree 2018—2020" [ref=e98] [cursor=pointer]:
+            - generic [ref=e99]: Mindtree
+            - generic [ref=e100]: 2018—2020
+          - region "Mindtree":
+            - paragraph: Products across education, insurance, banking, and supply chain.
+        - listitem [ref=e101]:
+          - button "Wipro 2016—2018" [ref=e102] [cursor=pointer]:
+            - generic [ref=e103]: Wipro
+            - generic [ref=e104]: 2016—2018
+          - region "Wipro":
+            - paragraph: Automation, tracking, templating, and performance optimization.
+    - region [ref=e105]:
+      - generic [ref=e106]:
+        - heading "Capability clusters" [level=2] [ref=e107]
+        - paragraph [ref=e108]: Product to platform
+      - list [ref=e109]:
+        - listitem [ref=e110]:
+          - heading "Frontend" [level=3] [ref=e111]
+          - paragraph [ref=e112]: Angular · React · TypeScript · HTML5 · CSS3
+        - listitem [ref=e113]:
+          - heading "Backend" [level=3] [ref=e114]
+          - paragraph [ref=e115]: Node.js · Nest.js · REST APIs · SQL
+        - listitem [ref=e116]:
+          - heading "Platform" [level=3] [ref=e117]
+          - paragraph [ref=e118]: AWS · Linux · Git · CI/CD
+        - listitem [ref=e119]:
+          - heading "Quality" [level=3] [ref=e120]
+          - paragraph [ref=e121]: Unit · E2E · Security · Patterns
+        - listitem [ref=e122]:
+          - heading "AI + Product" [level=3] [ref=e123]
+          - paragraph [ref=e124]: Gen AI · Agentic AI · RAG · LLMs · UI/UX
+    - region [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - heading "Connect the next opportunity." [level=2] [ref=e128]
+          - paragraph [ref=e129]: Bengaluru · +91 79729 14312 · shankar3336@gmail.com
+        - generic [ref=e130]:
+          - link "Email" [ref=e131] [cursor=pointer]:
+            - /url: mailto:shankar3336@gmail.com
+          - link "Call" [ref=e132] [cursor=pointer]:
+            - /url: tel:+917972914312
+    - region "Design tokens (dev only)" [ref=e133]:
+      - heading "Design tokens" [level=2] [ref=e134]
+      - list [ref=e135]:
+        - listitem [ref=e136]:
+          - code [ref=e138]: "--color-bg"
+        - listitem [ref=e139]:
+          - code [ref=e141]: "--color-surface"
+        - listitem [ref=e142]:
+          - code [ref=e144]: "--color-surface-pill"
+        - listitem [ref=e145]:
+          - code [ref=e147]: "--color-surface-tint"
+        - listitem [ref=e148]:
+          - code [ref=e150]: "--color-surface-active"
+        - listitem [ref=e151]:
+          - code [ref=e153]: "--color-rule"
+        - listitem [ref=e154]:
+          - code [ref=e156]: "--color-border"
+        - listitem [ref=e157]:
+          - code [ref=e159]: "--color-ring"
+        - listitem [ref=e160]:
+          - code [ref=e162]: "--color-text"
+        - listitem [ref=e163]:
+          - code [ref=e165]: "--color-text-muted"
+        - listitem [ref=e166]:
+          - code [ref=e168]: "--color-accent"
+        - listitem [ref=e169]:
+          - code [ref=e171]: "--color-accent-brand"
+        - listitem [ref=e172]:
+          - code [ref=e174]: "--color-accent-2"
+        - listitem [ref=e175]:
+          - code [ref=e177]: "--color-on-primary"
+      - list [ref=e178]:
+        - listitem [ref=e179]:
+          - code [ref=e181]: "--grad-primary"
+        - listitem [ref=e182]:
+          - code [ref=e184]: "--grad-primary-design"
+        - listitem [ref=e185]:
+          - code [ref=e187]: "--grad-headline"
+        - listitem [ref=e188]:
+          - code [ref=e190]: "--grad-story-card"
+        - listitem [ref=e191]:
+          - code [ref=e193]: "--grad-cta"
+        - listitem [ref=e194]:
+          - code [ref=e196]: "--grad-orb-hero"
+        - listitem [ref=e197]:
+          - code [ref=e199]: "--grad-orb-metric"

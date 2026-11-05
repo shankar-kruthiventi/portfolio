@@ -1,0 +1,32 @@
+.contact {
+  padding-block: var(--space-6) var(--space-8);
+  scroll-margin-top: var(--space-6);
+}
+
+.contact__panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--grad-cta);
+  box-shadow: var(--shadow-card);
+}
+
+.contact__title {
+  font-size: var(--text-h2);
+}
+
+.contact__details {
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
+  overflow-wrap: anywhere;
+}
+
+.contact__actions {
+  display: flex;
+  gap: var(--space-3);
+}

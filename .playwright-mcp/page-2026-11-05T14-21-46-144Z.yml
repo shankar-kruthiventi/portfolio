@@ -1,0 +1,148 @@
+- generic [ref=f11e2]:
+  - link "Skip to content" [ref=f11e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f11e4]:
+    - generic [ref=f11e5]:
+      - link "Sankara Rao Kruthiventi — home" [ref=f11e6] [cursor=pointer]:
+        - /url: "#top"
+        - text: SRK
+      - navigation "Primary" [ref=f11e7]:
+        - link "Impact" [ref=f11e8] [cursor=pointer]:
+          - /url: "#impact"
+        - link "Experience" [ref=f11e9] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Contact" [ref=f11e10] [cursor=pointer]:
+          - /url: "#contact"
+        - button "Switch to light theme" [ref=f11e11] [cursor=pointer]
+  - main [ref=f11e15]:
+    - region [ref=f11e16]:
+      - generic [ref=f11e17]:
+        - paragraph [ref=f11e18]: Senior Full-Stack Engineer .
+        - heading "Engineering across the whole constellation." [level=1] [ref=f11e19]
+        - paragraph [ref=f11e20]: Sankara Rao Kruthiventi Architecting dependable digital products. Integrating interfaces, platforms, and AI with a relentless focus on quality and aesthetics.
+        - generic [ref=f11e21]:
+          - link "Explore résumé" [ref=f11e22] [cursor=pointer]:
+            - /url: /Sankara-Rao-Kruthiventi-Resume.pdf
+          - link "LinkedIn" [ref=f11e23] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/shankarkruthiventi/
+        - paragraph [ref=f11e24]: 10 years · Bengaluru, India.
+      - generic [ref=f11e25]:
+        - generic [ref=f11e29]:
+          - generic [ref=f11e30]: Senior
+          - generic [ref=f11e31]: Full Stack
+        - list [ref=f11e32]:
+          - listitem [ref=f11e33]: TypeScript
+          - listitem [ref=f11e34]: Node.js
+          - listitem [ref=f11e35]: Angular
+          - listitem [ref=f11e36]: AWS
+          - listitem [ref=f11e37]: AI / RAG
+    - region [ref=f11e38]:
+      - generic [ref=f11e39]:
+        - heading "Signals of impact" [level=2] [ref=f11e40]
+        - paragraph [ref=f11e41]: Story rail · Verified from experience
+      - generic [ref=f11e42]:
+        - tablist "Case studies" [ref=f11e43]:
+          - tab "70% Unified management OpenText" [selected] [ref=f11e44] [cursor=pointer]:
+            - generic [ref=f11e45]: 70%
+            - generic [ref=f11e46]:
+              - generic [ref=f11e47]: Unified management
+              - generic [ref=f11e48]: OpenText
+          - tab "60% Incident & Breach module OneTrust" [ref=f11e49] [cursor=pointer]:
+            - generic [ref=f11e50]: 60%
+            - generic [ref=f11e51]:
+              - generic [ref=f11e52]: Incident & Breach module
+              - generic [ref=f11e53]: OneTrust
+          - tab "80% SME loan workflows OakNorth" [ref=f11e54] [cursor=pointer]:
+            - generic [ref=f11e55]: 80%
+            - generic [ref=f11e56]:
+              - generic [ref=f11e57]: SME loan workflows
+              - generic [ref=f11e58]: OakNorth
+          - tab "75% Reusable Angular systems Mindtree" [ref=f11e59] [cursor=pointer]:
+            - generic [ref=f11e60]: 75%
+            - generic [ref=f11e61]:
+              - generic [ref=f11e62]: Reusable Angular systems
+              - generic [ref=f11e63]: Mindtree
+          - tab "90% Document automation Wipro" [ref=f11e64] [cursor=pointer]:
+            - generic [ref=f11e65]: 90%
+            - generic [ref=f11e66]:
+              - generic [ref=f11e67]: Document automation
+              - generic [ref=f11e68]: Wipro
+        - tabpanel "70% Unified management OpenText" [ref=f11e69]:
+          - generic [ref=f11e71]: 70%
+          - generic [ref=f11e72]:
+            - paragraph [ref=f11e73]: OpenText · Unified Management Console
+            - generic [ref=f11e74]:
+              - generic [ref=f11e75]:
+                - term [ref=f11e76]: 01 / Context
+                - definition [ref=f11e77]: Manual server configuration and recurring operational tasks.
+              - generic [ref=f11e78]:
+                - term [ref=f11e79]: 02 / Engineering
+                - definition [ref=f11e80]: A Unified Management Console architected with Node.js and Angular.
+              - generic [ref=f11e81]:
+                - term [ref=f11e82]: 03 / Outcome
+                - definition [ref=f11e83]: Reduced manual server configuration and operational tasks by 70%.
+    - region [ref=f11e84]:
+      - generic [ref=f11e85]:
+        - heading "Experience nodes" [level=2] [ref=f11e86]
+        - paragraph [ref=f11e87]: Select a node to expand
+      - list [ref=f11e88]:
+        - listitem [ref=f11e89]:
+          - button "OpenText 2022—Present" [expanded] [ref=f11e90] [cursor=pointer]:
+            - generic [ref=f11e91]: OpenText
+            - generic [ref=f11e92]: 2022—Present
+          - region "OpenText" [ref=f11e93]:
+            - paragraph [ref=f11e94]: Unified Management Console, Angular frameworks, CI/CD, OpenAPI, passkeys, and authorization.
+        - listitem [ref=f11e95]:
+          - button "OneTrust 2021—2022" [ref=f11e96] [cursor=pointer]:
+            - generic [ref=f11e97]: OneTrust
+            - generic [ref=f11e98]: 2021—2022
+          - region "OneTrust":
+            - paragraph: Incident and breach microfrontend, reusable components, and standards.
+        - listitem [ref=f11e99]:
+          - button "OakNorth 2020—2021" [ref=f11e100] [cursor=pointer]:
+            - generic [ref=f11e101]: OakNorth
+            - generic [ref=f11e102]: 2020—2021
+          - region "OakNorth":
+            - paragraph: Core banking and reusable loan-processing components.
+        - listitem [ref=f11e103]:
+          - button "Mindtree 2018—2020" [ref=f11e104] [cursor=pointer]:
+            - generic [ref=f11e105]: Mindtree
+            - generic [ref=f11e106]: 2018—2020
+          - region "Mindtree":
+            - paragraph: Products across education, insurance, banking, and supply chain.
+        - listitem [ref=f11e107]:
+          - button "Wipro 2016—2018" [ref=f11e108] [cursor=pointer]:
+            - generic [ref=f11e109]: Wipro
+            - generic [ref=f11e110]: 2016—2018
+          - region "Wipro":
+            - paragraph: Automation, tracking, templating, and performance optimization.
+    - region [ref=f11e111]:
+      - generic [ref=f11e112]:
+        - heading "Capability clusters" [level=2] [ref=f11e113]
+        - paragraph [ref=f11e114]: Product to platform
+      - list [ref=f11e115]:
+        - listitem [ref=f11e116]:
+          - heading "Frontend" [level=3] [ref=f11e117]
+          - paragraph [ref=f11e118]: Angular · React · TypeScript · HTML5 · CSS3
+        - listitem [ref=f11e119]:
+          - heading "Backend" [level=3] [ref=f11e120]
+          - paragraph [ref=f11e121]: Node.js · Nest.js · REST APIs · SQL
+        - listitem [ref=f11e122]:
+          - heading "Platform" [level=3] [ref=f11e123]
+          - paragraph [ref=f11e124]: AWS · Linux · Git · CI/CD
+        - listitem [ref=f11e125]:
+          - heading "Quality" [level=3] [ref=f11e126]
+          - paragraph [ref=f11e127]: Unit · E2E · Security · Patterns
+        - listitem [ref=f11e128]:
+          - heading "AI + Product" [level=3] [ref=f11e129]
+          - paragraph [ref=f11e130]: Gen AI · Agentic AI · RAG · LLMs · UI/UX
+    - region [ref=f11e131]:
+      - generic [ref=f11e132]:
+        - generic [ref=f11e133]:
+          - heading "Connect with me." [level=2] [ref=f11e134]
+          - paragraph [ref=f11e135]: Bengaluru · +91 79729 14312 · sankar@sankarbuilds.io
+        - generic [ref=f11e136]:
+          - link "Email" [ref=f11e137] [cursor=pointer]:
+            - /url: mailto:sankar@sankarbuilds.io
+          - link "Call" [ref=f11e138] [cursor=pointer]:
+            - /url: tel:+917972914312
